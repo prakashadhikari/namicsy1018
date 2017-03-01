@@ -1,0 +1,93 @@
+body{
+	background: gray;font-size: 15px;font-family: cursive;margin:0;line-height: 27px;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+	margin: 0;padding: 0;
+}
+li{
+	list-style: none;
+}
+
+header{
+	background: blue;color: white;text-align: center;padding: 3%;
+}
+
+.menubar{
+	background: blue;margin:0.5% 0;padding: 0.5%;
+}
+.menubar ul{
+	display: flex;flex-flow: row wrap;
+}
+.menubar ul li{
+	text-align: center;flex: 1 auto;background: white;margin: 0 1%;padding: 0.5%;
+}
+.menubar ul li a{
+	color: black;text-decoration: none
+}
+.menubar ul li:hover{background: lightblue;border-radius: 10px;}
+.menubar ul li:hover a{color: red}
+
+
+
+section{
+	background: yellow;padding: 1%;
+	display: flex; flex-direction: row;
+	justify-content: space-between;
+}
+.sidebar{
+	width: 23%;background: green;padding: 1%; color: white;
+}
+.sidebar a{
+	color: white;
+}
+.main{
+	width: 72%;background: green;padding: 1%;color: white
+}
+.main h3{
+	background: white;padding: 1%;color: red
+}
+
+.sidebar article{
+	margin-bottom: 5%;
+}
+.sidebar article h3{
+	background: white; color: red;padding: 1%;
+}
+.sidebar article ul li{
+	margin: 2%;
+}
+.sidebar article ul li a{
+	text-decoration: none;
+}
+.sidebar article ul li a:hover{
+	color: red;text-decoration: underline;
+}
+
+footer{
+	background: blue;display: flex;flex-direction: row; padding: 1%;
+	justify-content: space-between;
+}
+footer .block{
+	background: white;width: 30%;padding: 1%; text-align: center;
+}
+
+@media all and (max-width: 600px){
+	section, footer, .menubar ul{
+		flex-direction: column;
+	}
+	.sidebar, .main{
+		width: 98%;
+	}
+	.sidebar article ul li{
+		text-align: center;
+		background: lightblue;
+	}
+	footer .block{
+		width: 98%;
+	}
+	.menubar ul li:hover{border-radius:0;}
+}
+
+
+
+
